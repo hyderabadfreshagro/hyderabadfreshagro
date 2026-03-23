@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hyderabad Fresh Agro Exports – Premium Indian Lemons for UAE &amp; GCC</title>
   <meta name="description" content="Premium Indian lemon exporters supplying GCC markets with reliable quality and timely delivery.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -19,16 +19,20 @@
       <img src="https://raw.githubusercontent.com/hyderabadfreshagro/hyderabadfreshagro/main/assets/logo_200kb.jpg" class="logo" alt="Hyderabad Fresh Agro Exports Logo">
       <div>
         <h1>Hyderabad Fresh Agro Exports</h1>
-        <p class="tagline">Premium Indian Lemons for UAE &amp; GCC Markets</p>
+        <p class="tagline" data-i18n="tagline">Premium Indian Lemons for UAE &amp; GCC Markets</p>
       </div>
     </div>
 
     <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#markets">Markets</a>
-      <a href="#why-us">Why Us</a>
-      <a href="#contact" class="btn nav-cta">Contact Us</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#products" data-i18n="nav_products">Products</a>
+      <a href="#markets" data-i18n="nav_markets">Markets</a>
+      <a href="#why-us" data-i18n="nav_why">Why Us</a>
+      <div class="lang-switch" onclick="toggleLanguage()" role="button" aria-label="Toggle language">
+        <span class="lang-opt active" id="opt-en">EN</span>
+        <span class="lang-opt" id="opt-ar">عربي</span>
+      </div>
+      <a href="#contact" class="btn nav-cta" data-i18n="nav_contact">Contact Us</a>
     </nav>
   </div>
 </header>
@@ -38,34 +42,30 @@
   <div class="container hero-grid">
 
     <div class="hero-content">
-      <span class="badge">🌿 Export Quality &bull; Fresh Supply &bull; GCC Focus</span>
-
-      <h2>Reliable lemon export supply from India to UAE &amp; GCC</h2>
-
-      <p class="hero-text">
+      <span class="badge" data-i18n="hero_badge">🌿 Export Quality &bull; Fresh Supply &bull; GCC Focus</span>
+      <h2 data-i18n="hero_h2">Reliable lemon export supply from India to UAE &amp; GCC</h2>
+      <p class="hero-text" data-i18n="hero_text">
         We supply premium Indian lemons with consistent grading, hygienic packing,
         and timely dispatch for importers, wholesalers, and distributors in UAE and GCC markets.
       </p>
-
       <div class="hero-buttons">
         <a href="https://wa.me/919440344144" class="btn btn-whatsapp" target="_blank">
-          <span>💬</span> Get Quote on WhatsApp
+          <span>💬</span> <span data-i18n="cta_wa">Get Quote on WhatsApp</span>
         </a>
-        <a href="#products" class="btn btn-light">View Product Details</a>
+        <a href="#products" class="btn btn-light" data-i18n="hero_cta_products">View Product Details</a>
       </div>
-
       <div class="highlights">
         <div class="highlight-box">
           <strong>40–55 mm</strong>
-          <span>Size Range</span>
+          <span data-i18n="stat_size">Size Range</span>
         </div>
         <div class="highlight-box">
           <strong>10–20 Tons</strong>
-          <span>Weekly Supply</span>
+          <span data-i18n="stat_supply">Weekly Supply</span>
         </div>
         <div class="highlight-box">
-          <strong>GCC Ready</strong>
-          <span>Export Focus</span>
+          <strong data-i18n="stat_gcc_label">GCC Ready</strong>
+          <span data-i18n="stat_gcc_sub">Export Focus</span>
         </div>
       </div>
     </div>
@@ -82,86 +82,79 @@
 <!-- ====== TRUST STRIP ====== -->
 <div class="trust-strip">
   <div class="container trust-strip-inner">
-    <span>✅ Export-Ready Packing</span>
-    <span>✅ Consistent Grading</span>
-    <span>✅ Timely Dispatch</span>
-    <span>✅ Direct from Farm</span>
-    <span>✅ Transparent Communication</span>
+    <span data-i18n="trust_1">✅ Export-Ready Packing</span>
+    <span data-i18n="trust_2">✅ Consistent Grading</span>
+    <span data-i18n="trust_3">✅ Timely Dispatch</span>
+    <span data-i18n="trust_4">✅ Direct from Farm</span>
+    <span data-i18n="trust_5">✅ Transparent Communication</span>
   </div>
 </div>
 
 <!-- ====== ABOUT ====== -->
 <section class="section" id="about">
   <div class="container about-grid">
-
     <div class="about-text">
-      <h2>About Us</h2>
-      <p>
+      <h2 data-i18n="about_title">About Us</h2>
+      <p data-i18n="about_p1">
         Hyderabad Fresh Agro Exports is focused on supplying premium-quality Indian lemons
         to UAE and GCC markets. Our goal is to build long-term relationships with serious buyers
         by delivering reliable quality, disciplined shipment planning, and transparent communication.
       </p>
-      <p>
+      <p data-i18n="about_p2">
         Based in Hyderabad, India — the heart of lemon-growing country — we work directly with
         farmers to ensure freshness, consistent grading, and competitive pricing for our buyers.
       </p>
     </div>
-
     <div class="about-stats">
       <div class="stat-box">
         <strong>10–20</strong>
-        <span>Tons per Week</span>
+        <span data-i18n="stat_tons">Tons per Week</span>
       </div>
       <div class="stat-box">
         <strong>40–55mm</strong>
-        <span>Export Grade Size</span>
+        <span data-i18n="stat_grade">Export Grade Size</span>
       </div>
       <div class="stat-box">
         <strong>5+</strong>
-        <span>GCC Countries</span>
+        <span data-i18n="stat_countries">GCC Countries</span>
       </div>
       <div class="stat-box">
         <strong>52 Wks</strong>
-        <span>Year-Round Supply</span>
+        <span data-i18n="stat_yearround">Year-Round Supply</span>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- ====== PRODUCTS ====== -->
 <section class="section alt" id="products">
   <div class="container">
-    <h2>Product Details</h2>
-    <p class="section-subtitle">Everything you need to know about our export-grade lemons</p>
-
+    <h2 data-i18n="products_title">Product Details</h2>
+    <p class="section-subtitle" data-i18n="products_sub">Everything you need to know about our export-grade lemons</p>
     <div class="cards">
       <div class="card">
         <div class="card-icon">🍋</div>
-        <h3>Product</h3>
-        <p>Fresh Indian Lemons</p>
-        <p class="card-note">Kagzi Nimbu — thin-skinned, high juice content</p>
+        <h3 data-i18n="prod1_h">Product</h3>
+        <p data-i18n="prod1_p">Fresh Indian Lemons</p>
+        <p class="card-note" data-i18n="prod1_note">Kagzi Nimbu — thin-skinned, high juice content</p>
       </div>
-
       <div class="card">
         <div class="card-icon">📏</div>
-        <h3>Size</h3>
+        <h3 data-i18n="prod2_h">Size</h3>
         <p>40 mm – 55 mm</p>
-        <p class="card-note">Uniformly graded to export standards</p>
+        <p class="card-note" data-i18n="prod2_note">Uniformly graded to export standards</p>
       </div>
-
       <div class="card">
         <div class="card-icon">📦</div>
-        <h3>Packing</h3>
-        <p>10 kg / 15 kg cartons</p>
-        <p class="card-note">Hygienic, ventilated export cartons</p>
+        <h3 data-i18n="prod3_h">Packing</h3>
+        <p data-i18n="prod3_p">10 kg / 15 kg cartons</p>
+        <p class="card-note" data-i18n="prod3_note">Hygienic, ventilated export cartons</p>
       </div>
-
       <div class="card">
         <div class="card-icon">🚢</div>
-        <h3>Supply</h3>
-        <p>10–20 tons weekly</p>
-        <p class="card-note">Year-round availability, consistent dispatch</p>
+        <h3 data-i18n="prod4_h">Supply</h3>
+        <p data-i18n="prod4_p">10–20 tons weekly</p>
+        <p class="card-note" data-i18n="prod4_note">Year-round availability, consistent dispatch</p>
       </div>
     </div>
   </div>
@@ -170,39 +163,38 @@
 <!-- ====== MARKETS ====== -->
 <section class="section" id="markets">
   <div class="container">
-    <h2>Markets We Serve</h2>
-    <p class="section-subtitle">Active buyer relationships across the GCC region</p>
-
+    <h2 data-i18n="markets_title">Markets We Serve</h2>
+    <p class="section-subtitle" data-i18n="markets_sub">Active buyer relationships across the GCC region</p>
     <div class="market-grid">
       <div class="market-card">
         <span class="market-flag">🇦🇪</span>
-        <strong>UAE</strong>
-        <span>Dubai, Abu Dhabi, Sharjah</span>
+        <strong data-i18n="market1_name">UAE</strong>
+        <span data-i18n="market1_cities">Dubai, Abu Dhabi, Sharjah</span>
       </div>
       <div class="market-card">
         <span class="market-flag">🇸🇦</span>
-        <strong>Saudi Arabia</strong>
-        <span>Riyadh, Jeddah, Dammam</span>
+        <strong data-i18n="market2_name">Saudi Arabia</strong>
+        <span data-i18n="market2_cities">Riyadh, Jeddah, Dammam</span>
       </div>
       <div class="market-card">
         <span class="market-flag">🇴🇲</span>
-        <strong>Oman</strong>
-        <span>Muscat &amp; major cities</span>
+        <strong data-i18n="market3_name">Oman</strong>
+        <span data-i18n="market3_cities">Muscat &amp; major cities</span>
       </div>
       <div class="market-card">
         <span class="market-flag">🇶🇦</span>
-        <strong>Qatar</strong>
-        <span>Doha &amp; surrounding areas</span>
+        <strong data-i18n="market4_name">Qatar</strong>
+        <span data-i18n="market4_cities">Doha &amp; surrounding areas</span>
       </div>
       <div class="market-card">
         <span class="market-flag">🇰🇼</span>
-        <strong>Kuwait</strong>
-        <span>Kuwait City</span>
+        <strong data-i18n="market5_name">Kuwait</strong>
+        <span data-i18n="market5_cities">Kuwait City</span>
       </div>
       <div class="market-card">
         <span class="market-flag">🇧🇭</span>
-        <strong>Bahrain</strong>
-        <span>Manama</span>
+        <strong data-i18n="market6_name">Bahrain</strong>
+        <span data-i18n="market6_cities">Manama</span>
       </div>
     </div>
   </div>
@@ -211,50 +203,49 @@
 <!-- ====== WHY US ====== -->
 <section class="section alt" id="why-us">
   <div class="container">
-    <h2>Why Work With Us</h2>
-    <p class="section-subtitle">What sets us apart from other lemon exporters</p>
-
+    <h2 data-i18n="why_title">Why Work With Us</h2>
+    <p class="section-subtitle" data-i18n="why_sub">What sets us apart from other lemon exporters</p>
     <div class="trust-grid">
       <div class="trust-item">
         <div class="trust-icon">🌾</div>
         <div class="trust-body">
-          <strong>Export-focused supply</strong>
-          <p>We supply exclusively for export — grading, packing, and documentation are all export-standard.</p>
+          <strong data-i18n="why1_title">Export-focused supply</strong>
+          <p data-i18n="why1_text">We supply exclusively for export — grading, packing, and documentation are all export-standard.</p>
         </div>
       </div>
       <div class="trust-item">
         <div class="trust-icon">✅</div>
         <div class="trust-body">
-          <strong>Fresh quality assurance</strong>
-          <p>Lemons are sourced, graded, and dispatched within 24–48 hours to ensure maximum freshness.</p>
+          <strong data-i18n="why2_title">Fresh quality assurance</strong>
+          <p data-i18n="why2_text">Lemons are sourced, graded, and dispatched within 24–48 hours to ensure maximum freshness.</p>
         </div>
       </div>
       <div class="trust-item">
         <div class="trust-icon">🚚</div>
         <div class="trust-body">
-          <strong>Reliable delivery</strong>
-          <p>We coordinate with experienced freight partners to ensure on-time delivery to your port.</p>
+          <strong data-i18n="why3_title">Reliable delivery</strong>
+          <p data-i18n="why3_text">We coordinate with experienced freight partners to ensure on-time delivery to your port.</p>
         </div>
       </div>
       <div class="trust-item">
         <div class="trust-icon">🤝</div>
         <div class="trust-body">
-          <strong>Buyer-first approach</strong>
-          <p>Your requirements drive our process — sizing, packing, frequency. We adapt to your needs.</p>
+          <strong data-i18n="why4_title">Buyer-first approach</strong>
+          <p data-i18n="why4_text">Your requirements drive our process — sizing, packing, frequency. We adapt to your needs.</p>
         </div>
       </div>
       <div class="trust-item">
         <div class="trust-icon">💬</div>
         <div class="trust-body">
-          <strong>Transparent communication</strong>
-          <p>Real-time updates on dispatch, shipment status, and pricing. No surprises.</p>
+          <strong data-i18n="why5_title">Transparent communication</strong>
+          <p data-i18n="why5_text">Real-time updates on dispatch, shipment status, and pricing. No surprises.</p>
         </div>
       </div>
       <div class="trust-item">
         <div class="trust-icon">📅</div>
         <div class="trust-body">
-          <strong>Long-term partnership</strong>
-          <p>We're not one-time sellers. We build lasting supply relationships with our buyers.</p>
+          <strong data-i18n="why6_title">Long-term partnership</strong>
+          <p data-i18n="why6_text">We're not one-time sellers. We build lasting supply relationships with our buyers.</p>
         </div>
       </div>
     </div>
@@ -265,19 +256,17 @@
 <section class="section cta-section" id="contact">
   <div class="container">
     <div class="cta-box">
-      <h2>Looking for a reliable lemon supplier?</h2>
-      <p>Contact us for pricing, samples, and shipment discussions.</p>
-
+      <h2 data-i18n="cta_title">Looking for a reliable lemon supplier?</h2>
+      <p data-i18n="cta_p">Contact us for pricing, samples, and shipment discussions.</p>
       <div class="cta-buttons">
         <a href="https://wa.me/919440344144" class="btn btn-whatsapp" target="_blank">
-          <span>💬</span> Chat on WhatsApp
+          <span>💬</span> <span data-i18n="cta_wa">Chat on WhatsApp</span>
         </a>
         <a href="mailto:hyderabadfreshagro@gmail.com" class="btn btn-light">
-          <span>✉️</span> Send Email
+          <span>✉️</span> <span data-i18n="cta_email">Send Email</span>
         </a>
       </div>
-
-      <p class="cta-note">Typically responds within a few hours</p>
+      <p class="cta-note" data-i18n="cta_note">Typically responds within a few hours</p>
     </div>
   </div>
 </section>
@@ -285,38 +274,253 @@
 <!-- ====== FOOTER ====== -->
 <footer class="footer">
   <div class="container footer-grid">
-
     <div class="footer-brand">
       <strong>Hyderabad Fresh Agro Exports</strong>
-      <p>Premium Indian Lemons &bull; GCC Supply</p>
-      <p class="footer-tagline">Direct from Hyderabad, India to your markets</p>
+      <p data-i18n="footer_p1">Premium Indian Lemons &bull; GCC Supply</p>
+      <p class="footer-tagline" data-i18n="footer_p2">Direct from Hyderabad, India to your markets</p>
     </div>
-
     <div class="footer-links">
-      <strong>Quick Links</strong>
+      <strong data-i18n="footer_links_title">Quick Links</strong>
       <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#products">Product Details</a></li>
-        <li><a href="#markets">Markets We Serve</a></li>
-        <li><a href="#why-us">Why Work With Us</a></li>
+        <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+        <li><a href="#products" data-i18n="nav_products">Product Details</a></li>
+        <li><a href="#markets" data-i18n="nav_markets">Markets We Serve</a></li>
+        <li><a href="#why-us" data-i18n="nav_why">Why Work With Us</a></li>
       </ul>
     </div>
-
     <div class="footer-contact">
-      <strong>Get in Touch</strong>
+      <strong data-i18n="footer_contact_title">Get in Touch</strong>
       <p>📧 <a href="mailto:hyderabadfreshagro@gmail.com">hyderabadfreshagro@gmail.com</a></p>
       <p>📱 <a href="https://wa.me/919440344144">+91 94403 44144</a></p>
-      <p>📍 Hyderabad, Telangana, India</p>
+      <p>📍 <span data-i18n="footer_location">Hyderabad, Telangana, India</span></p>
     </div>
-
   </div>
-
   <div class="footer-bottom">
     <div class="container">
-      <span>© 2025 Hyderabad Fresh Agro Exports. All rights reserved.</span>
+      <span data-i18n="footer_copy">© 2025 Hyderabad Fresh Agro Exports. All rights reserved.</span>
     </div>
   </div>
 </footer>
+
+<!-- ====== LANGUAGE SCRIPT ====== -->
+<script>
+  const translations = {
+    en: {
+      tagline:          "Premium Indian Lemons for UAE &amp; GCC Markets",
+      nav_about:        "About",
+      nav_products:     "Products",
+      nav_markets:      "Markets",
+      nav_why:          "Why Us",
+      nav_contact:      "Contact Us",
+      hero_badge:       "🌿 Export Quality &bull; Fresh Supply &bull; GCC Focus",
+      hero_h2:          "Reliable lemon export supply from India to UAE &amp; GCC",
+      hero_text:        "We supply premium Indian lemons with consistent grading, hygienic packing, and timely dispatch for importers, wholesalers, and distributors in UAE and GCC markets.",
+      hero_cta_products:"View Product Details",
+      cta_wa:           "Get Quote on WhatsApp",
+      stat_size:        "Size Range",
+      stat_supply:      "Weekly Supply",
+      stat_gcc_label:   "GCC Ready",
+      stat_gcc_sub:     "Export Focus",
+      trust_1:          "✅ Export-Ready Packing",
+      trust_2:          "✅ Consistent Grading",
+      trust_3:          "✅ Timely Dispatch",
+      trust_4:          "✅ Direct from Farm",
+      trust_5:          "✅ Transparent Communication",
+      about_title:      "About Us",
+      about_p1:         "Hyderabad Fresh Agro Exports is focused on supplying premium-quality Indian lemons to UAE and GCC markets. Our goal is to build long-term relationships with serious buyers by delivering reliable quality, disciplined shipment planning, and transparent communication.",
+      about_p2:         "Based in Hyderabad, India — the heart of lemon-growing country — we work directly with farmers to ensure freshness, consistent grading, and competitive pricing for our buyers.",
+      stat_tons:        "Tons per Week",
+      stat_grade:       "Export Grade Size",
+      stat_countries:   "GCC Countries",
+      stat_yearround:   "Year-Round Supply",
+      products_title:   "Product Details",
+      products_sub:     "Everything you need to know about our export-grade lemons",
+      prod1_h:          "Product",
+      prod1_p:          "Fresh Indian Lemons",
+      prod1_note:       "Kagzi Nimbu — thin-skinned, high juice content",
+      prod2_h:          "Size",
+      prod2_note:       "Uniformly graded to export standards",
+      prod3_h:          "Packing",
+      prod3_p:          "10 kg / 15 kg cartons",
+      prod3_note:       "Hygienic, ventilated export cartons",
+      prod4_h:          "Supply",
+      prod4_p:          "10–20 tons weekly",
+      prod4_note:       "Year-round availability, consistent dispatch",
+      markets_title:    "Markets We Serve",
+      markets_sub:      "Active buyer relationships across the GCC region",
+      market1_name:     "UAE",
+      market1_cities:   "Dubai, Abu Dhabi, Sharjah",
+      market2_name:     "Saudi Arabia",
+      market2_cities:   "Riyadh, Jeddah, Dammam",
+      market3_name:     "Oman",
+      market3_cities:   "Muscat &amp; major cities",
+      market4_name:     "Qatar",
+      market4_cities:   "Doha &amp; surrounding areas",
+      market5_name:     "Kuwait",
+      market5_cities:   "Kuwait City",
+      market6_name:     "Bahrain",
+      market6_cities:   "Manama",
+      why_title:        "Why Work With Us",
+      why_sub:          "What sets us apart from other lemon exporters",
+      why1_title:       "Export-focused supply",
+      why1_text:        "We supply exclusively for export — grading, packing, and documentation are all export-standard.",
+      why2_title:       "Fresh quality assurance",
+      why2_text:        "Lemons are sourced, graded, and dispatched within 24–48 hours to ensure maximum freshness.",
+      why3_title:       "Reliable delivery",
+      why3_text:        "We coordinate with experienced freight partners to ensure on-time delivery to your port.",
+      why4_title:       "Buyer-first approach",
+      why4_text:        "Your requirements drive our process — sizing, packing, frequency. We adapt to your needs.",
+      why5_title:       "Transparent communication",
+      why5_text:        "Real-time updates on dispatch, shipment status, and pricing. No surprises.",
+      why6_title:       "Long-term partnership",
+      why6_text:        "We're not one-time sellers. We build lasting supply relationships with our buyers.",
+      cta_title:        "Looking for a reliable lemon supplier?",
+      cta_p:            "Contact us for pricing, samples, and shipment discussions.",
+      cta_email:        "Send Email",
+      cta_note:         "Typically responds within a few hours",
+      footer_p1:        "Premium Indian Lemons &bull; GCC Supply",
+      footer_p2:        "Direct from Hyderabad, India to your markets",
+      footer_links_title: "Quick Links",
+      footer_contact_title: "Get in Touch",
+      footer_location:  "Hyderabad, Telangana, India",
+      footer_copy:      "© 2025 Hyderabad Fresh Agro Exports. All rights reserved."
+    },
+
+    ar: {
+      tagline:          "ليمون هندي ممتاز لأسواق الإمارات ودول الخليج",
+      nav_about:        "من نحن",
+      nav_products:     "المنتجات",
+      nav_markets:      "الأسواق",
+      nav_why:          "لماذا نحن",
+      nav_contact:      "تواصل معنا",
+      hero_badge:       "🌿 جودة التصدير &bull; إمداد طازج &bull; التركيز على الخليج",
+      hero_h2:          "إمداد موثوق من الليمون الهندي إلى الإمارات ودول مجلس التعاون الخليجي",
+      hero_text:        "نوفّر ليموناً هندياً ممتازاً بفرز منتظم وتغليف صحي وشحن في الوقت المحدد، للمستوردين وتجار الجملة والموزعين في الإمارات وأسواق دول الخليج.",
+      hero_cta_products:"عرض تفاصيل المنتج",
+      cta_wa:           "احصل على عرض عبر واتساب",
+      stat_size:        "نطاق الحجم",
+      stat_supply:      "الإمداد الأسبوعي",
+      stat_gcc_label:   "جاهز للخليج",
+      stat_gcc_sub:     "التركيز على التصدير",
+      trust_1:          "✅ تغليف جاهز للتصدير",
+      trust_2:          "✅ فرز منتظم",
+      trust_3:          "✅ شحن في الوقت المحدد",
+      trust_4:          "✅ مباشرة من المزرعة",
+      trust_5:          "✅ تواصل شفاف",
+      about_title:      "من نحن",
+      about_p1:         "تتخصص هيدراباد فريش أغرو إكسبورتس في توريد الليمون الهندي عالي الجودة إلى أسواق الإمارات ودول مجلس التعاون الخليجي. هدفنا بناء علاقات طويلة الأمد مع المشترين الجادين من خلال تقديم جودة موثوقة وتخطيط محكم للشحن وتواصل شفاف.",
+      about_p2:         "يقع مقرنا في حيدراباد، الهند — عاصمة زراعة الليمون — حيث نعمل مباشرة مع المزارعين لضمان الطازجية والفرز المنتظم والأسعار التنافسية لعملائنا.",
+      stat_tons:        "طن / أسبوع",
+      stat_grade:       "مقياس درجة التصدير",
+      stat_countries:   "دول الخليج",
+      stat_yearround:   "إمداد طوال العام",
+      products_title:   "تفاصيل المنتج",
+      products_sub:     "كل ما تحتاج معرفته عن ليموننا من درجة التصدير",
+      prod1_h:          "المنتج",
+      prod1_p:          "ليمون هندي طازج",
+      prod1_note:       "كاغزي نيمبو — قشرة رفيعة، محتوى عصير مرتفع",
+      prod2_h:          "الحجم",
+      prod2_note:       "مفروز بشكل منتظم وفق معايير التصدير",
+      prod3_h:          "التغليف",
+      prod3_p:          "كراتين 10 كجم / 15 كجم",
+      prod3_note:       "كراتين تصدير صحية وجيدة التهوية",
+      prod4_h:          "الإمداد",
+      prod4_p:          "10–20 طن أسبوعياً",
+      prod4_note:       "متوفر طوال العام، شحن منتظم",
+      markets_title:    "الأسواق التي نخدمها",
+      markets_sub:      "علاقات فعّالة مع المشترين في منطقة الخليج",
+      market1_name:     "الإمارات",
+      market1_cities:   "دبي وأبوظبي والشارقة",
+      market2_name:     "المملكة العربية السعودية",
+      market2_cities:   "الرياض وجدة والدمام",
+      market3_name:     "عُمان",
+      market3_cities:   "مسقط والمدن الرئيسية",
+      market4_name:     "قطر",
+      market4_cities:   "الدوحة والمناطق المحيطة",
+      market5_name:     "الكويت",
+      market5_cities:   "مدينة الكويت",
+      market6_name:     "البحرين",
+      market6_cities:   "المنامة",
+      why_title:        "لماذا تعمل معنا",
+      why_sub:          "ما يميزنا عن سائر مصدري الليمون",
+      why1_title:       "إمداد موجّه للتصدير",
+      why1_text:        "نورد حصرياً للتصدير — الفرز والتغليف والتوثيق وفق معايير التصدير الدولية.",
+      why2_title:       "ضمان الجودة الطازجة",
+      why2_text:        "يُجمع الليمون ويُفرز ويُشحن خلال 24–48 ساعة لضمان أقصى درجات الطازجية.",
+      why3_title:       "توصيل موثوق",
+      why3_text:        "نتعاون مع شركاء شحن ذوي خبرة لضمان التسليم في الوقت المحدد إلى ميناء وجهتكم.",
+      why4_title:       "المشتري أولاً",
+      why4_text:        "متطلباتكم هي التي تحدد مسارنا — الحجم والتغليف والتردد. نتكيف مع احتياجاتكم.",
+      why5_title:       "تواصل شفاف",
+      why5_text:        "تحديثات فورية حول الشحن وحالة الإرسالية والأسعار. لا مفاجآت.",
+      why6_title:       "شراكة طويلة الأمد",
+      why6_text:        "لسنا بائعين لمرة واحدة. نبني علاقات إمداد دائمة مع عملائنا.",
+      cta_title:        "هل تبحث عن مورد ليمون موثوق؟",
+      cta_p:            "تواصل معنا للأسعار والعينات ومناقشة الشحن.",
+      cta_email:        "أرسل بريداً إلكترونياً",
+      cta_note:         "نرد عادةً في غضون ساعات قليلة",
+      footer_p1:        "ليمون هندي ممتاز &bull; إمداد لدول الخليج",
+      footer_p2:        "مباشرة من حيدراباد، الهند إلى أسواقكم",
+      footer_links_title: "روابط سريعة",
+      footer_contact_title: "تواصل معنا",
+      footer_location:  "حيدراباد، تيلانغانا، الهند",
+      footer_copy:      "© 2025 هيدراباد فريش أغرو إكسبورتس. جميع الحقوق محفوظة."
+    }
+  };
+
+  let currentLang = 'en';
+
+  function applyLanguage(lang) {
+    currentLang = lang;
+    const html = document.documentElement;
+    html.setAttribute('lang', lang);
+    html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    document.body.classList.toggle('rtl', lang === 'ar');
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang] && translations[lang][key] !== undefined) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+
+    const optEn = document.getElementById('opt-en');
+    const optAr = document.getElementById('opt-ar');
+    if (optEn && optAr) {
+      optEn.classList.toggle('active', lang === 'en');
+      optAr.classList.toggle('active', lang === 'ar');
+    }
+
+    localStorage.setItem('lang', lang);
+  }
+
+  function toggleLanguage() {
+    applyLanguage(currentLang === 'en' ? 'ar' : 'en');
+  }
+
+  function detectLanguage() {
+    const saved = localStorage.getItem('lang');
+    if (saved) return saved;
+
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+    const middleEastTZ = [
+      'Asia/Dubai','Asia/Riyadh','Asia/Kuwait','Asia/Bahrain',
+      'Asia/Qatar','Asia/Muscat','Asia/Baghdad','Asia/Amman',
+      'Asia/Beirut','Africa/Cairo','Asia/Aden','Asia/Nicosia'
+    ];
+    if (middleEastTZ.includes(tz)) return 'ar';
+
+    const browserLang = navigator.language || navigator.userLanguage || '';
+    if (browserLang.toLowerCase().startsWith('ar')) return 'ar';
+
+    return 'en';
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    applyLanguage(detectLanguage());
+  });
+</script>
 
 </body>
 </html>
